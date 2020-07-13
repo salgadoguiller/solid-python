@@ -1,0 +1,6 @@
+flask
+Flask-RESTful
+Flask-HTTPAuth
+marshmallow
+webargs
+requests
