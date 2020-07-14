@@ -19,8 +19,7 @@ class UserDataFromRequest(UserData):
         self.profile_id = profile_id
 
     def get(self):
-        req = requests.get(
-            f'https://us-central1-liu-profile-api-dev.cloudfunctions.net/user-details?profile_id={self.profile_id}')
+        req = requests.get('<user-details-url>')
         status_code = req.status_code
 
         if status_code != 200:

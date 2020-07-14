@@ -13,9 +13,9 @@ class Document():
 
         for key in keys:
             indexer_url = None
-            if key == 'PXA5IVtq9QRwWQKduJKTQSdI70EvhFj8w5ql3UgI':
+            if key == '<client-id>':
                 indexer_url = '<search-url>'
-            if key == 'dtQrvgVlFP2VWV5IpTGZP5w179Wf9lad95vh9JHI':
+            if key == '<client-id>':
                 indexer_url = '<search-url>'
             if indexer_url is None:
                 continue

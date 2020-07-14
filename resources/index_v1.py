@@ -16,8 +16,7 @@ class IndexResource(Resource):
             profile_id = user.get('profile_id')
             print(f'profile_id: {profile_id}')
 
-            req = requests.get(
-                f'https://us-central1-liu-profile-api-dev.cloudfunctions.net/user-details?profile_id={profile_id}')
+            req = requests.get('<user-details-url>')
             status_code = req.status_code
 
             if status_code != 200:
@@ -29,10 +28,10 @@ class IndexResource(Resource):
 
             for key in keys:
                 indexer_url = None
-                if key == 'PXA5IVtq9QRwWQKduJKTQSdI70EvhFj8w5ql3UgI':
-                    indexer_url = 'https://liu-search-api-dev.appspot.com/connections'
-                if key == 'dtQrvgVlFP2VWV5IpTGZP5w179Wf9lad95vh9JHI':
-                    indexer_url = 'https://app-search-aqory3l6ba-uc.a.run.app/api/v1/connections'
+                if key == '<client-id>':
+                    indexer_url = '<search-url>'
+                if key == '<client-id>':
+                    indexer_url = '<search-url>'
                 if indexer_url is None:
                     continue
 
